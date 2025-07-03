@@ -39,6 +39,36 @@ The dataset is located in the `arac_verileri.csv` file and contains the followin
 3. **Lasso Regression**  
 4. **ElasticNet Regression**  
 5. **Random Forest Regressor**  
-6. **XGBoost Regressor** (Hyperparameter search done with GridSea
+6. **XGBoost Regressor** (Hyperparameter search done with GridSearchCV)
+
+---
+
+## 📊 Model Performance Comparison
+
+| Model               | R² Score | MSE        |
+|---------------------|----------|------------|
+| Linear Regression   | 0.6227   | 0.1466     |
+| Ridge Regression    | 0.6226   | 0.1466     |
+| Lasso Regression    | 0.6302   | 0.1437     |
+| ElasticNet          | 0.6300   | 0.1438     |
+| Random Forest       | 0.5595   | 0.1711     |
+| XGBoost (raw)       | 0.4321   | 0.2206     |
+| XGBoost (tuned)     | 0.5938   | 0.1578     |
+
+---
+
+## 🏁 Best Model
+
+According to the model comparisons, **Lasso Regression** has shown the best performance with the highest accuracy (R² = **0.6302**) and the lowest error (MSE = **0.1437**). Therefore, the final evaluation of the project has been made using the Lasso model.
+
+---
+
+## ⚙️ Installation and Running
+
+1. Clone this repository:
+
+```bash
+git clone https://github.com/cagatayozdincer/vehicle_fuel_prediction.git
+cd vehicle_fuel_prediction
 
 
