@@ -1,16 +1,34 @@
-# Vehicle Fuel Consumption Prediction
+# 🚗 Araç Yakıt Tüketimi Tahmini
 
-Bu proje, araçların özelliklerine dayalı olarak **yakıt tüketimini** tahmin etmeye yönelik bir makine öğrenimi projesidir. 
-
-## Veri Seti
-
-Proje için kullanılan veri setine [buradan ulaşabilirsiniz](./arac_verileri.csv).
+Bu proje, farklı araçlara ait teknik özelliklere dayanarak ortalama yakıt tüketimini tahmin etmeyi amaçlamaktadır. Python ile geliştirilmiş bu makine öğrenimi uygulamasında veri analizi, görselleştirme, ön işleme ve farklı regresyon modelleri kullanılarak sonuçlar karşılaştırılmıştır.
 
 ---
 
-## Kurulum
+## 📊 Kullanılan Veri Seti
 
-Projenin çalışabilmesi için gerekli kütüphaneleri yüklemek için aşağıdaki komutu kullanabilirsiniz:
+Veri seti, proje içerisinde `arac_verileri.csv` adıyla yer almakta olup aşağıdaki özellikleri içermektedir:
+
+- `brand_model`: Araç markası ve modeli  
+- `cylinder`: Silindir sayısı  
+- `hp`: Beygir gücü  
+- `weight`: Ağırlık (kg)  
+- `acceleration`: 0-100 km/s hızlanma süresi (saniye)  
+- `model_year`: Üretim yılı  
+- `target`: Ortalama yakıt tüketimi (L/100 km)
+
+**Not:** Veri seti kullanıcı tarafından oluşturulmuş yapay verilerden oluşmaktadır.
+
+---
+
+## ⚙️ Kullanılan Kütüphaneler
 
 ```bash
-pip install -r requirements.txt
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+xgboost
+scipy
+
+
