@@ -4,31 +4,64 @@ Bu proje, farklı araçlara ait teknik özelliklere dayanarak ortalama yakıt t�
 
 ---
 
-## 📊 Kullanılan Veri Seti
+## 📁 Veri Seti
 
-Veri seti, proje içerisinde `arac_verileri.csv` adıyla yer almakta olup aşağıdaki özellikleri içermektedir:
+Veri seti `arac_verileri.csv` dosyasında yer almaktadır ve şu değişkenleri içerir:
 
 - `brand_model`: Araç markası ve modeli  
 - `cylinder`: Silindir sayısı  
 - `hp`: Beygir gücü  
 - `weight`: Ağırlık (kg)  
-- `acceleration`: 0-100 km/s hızlanma süresi (saniye)  
-- `model_year`: Üretim yılı  
+- `acceleration`: 0-100 km/s hızlanma süresi  
+- `model_year`: Araç üretim yılı  
 - `target`: Ortalama yakıt tüketimi (L/100 km)
 
-**Not:** Veri seti kullanıcı tarafından oluşturulmuş yapay verilerden oluşmaktadır.
+**Not:** Veri, kullanıcı tarafından yapay olarak üretilmiştir.
 
 ---
 
-## ⚙️ Kullanılan Kütüphaneler
+## 🛠️ Kullanılan Kütüphaneler
+
+- pandas  
+- numpy  
+- seaborn  
+- matplotlib  
+- scikit-learn  
+- xgboost  
+- scipy
+
+---
+
+## 🧪 Uygulanan Modeller
+
+1. **Linear Regression**  
+2. **Ridge Regression** (GridSearchCV ile hiperparametre optimizasyonu)  
+3. **Lasso Regression**  
+4. **ElasticNet Regression**
+5. ""Random Forest Reggressor""
+6. **XGBoost Regressor** (GridSearchCV ile hiperparametre araması yapılmıştır)
+
+---
+
+## 📊 Model Performans Karşılaştırması
+
+| Model               | R² Skoru | MSE        |
+|--------------------|----------|------------|
+| Linear Regression  | 0.6227   | 0.1466     |
+| Ridge Regression   | 0.6226   | 0.1466     |
+| Lasso Regression   | 0.6302   | 0.1437     |
+| ElasticNet         | 0.6300   | 0.1438     |
+| Random Forest      | 0.5595   | 0.1711     |
+| XGBoost (raw)      | 0.4321   | 0.2206     |
+| XGBoost (tuned)    | 0.5938   | 0.1578     |
+
+---
+
+## ⚙️ Kurulum ve Çalıştırma
+
+1. Bu repository'yi klonlayın:
 
 ```bash
-pandas
-numpy
-matplotlib
-seaborn
-scikit-learn
-xgboost
-scipy
-
+git clone https://github.com/kullanici_adin/vehicle_fuel_prediction.git
+cd vehicle_fuel_prediction
 
