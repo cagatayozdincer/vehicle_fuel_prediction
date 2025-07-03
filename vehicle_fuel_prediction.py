@@ -350,40 +350,5 @@ plt.show()
 
 
 
-# Modelleri ve isimlerini listele
-models = [
-    ("Linear Regression", lr),
-    ("Ridge Regression", ridge_best),
-    ("Lasso Regression", clf.best_estimator_),  # lasso için GridSearch sonrası model
-    ("ElasticNet Regression", elastic_net_best),
-    ("XGBoost Regression", best_xgb)
-]
-
-results = []
-
-for name, model in models:
-    # Test setinde tahmin yap
-    y_pred = model.predict(X_test)
-    
-    # Performans metrikleri
-    mse = mean_squared_error(y_test, y_pred)
-    r2 = r2_score(y_test, y_pred)
-    
-    results.append({
-        "Model": name,
-        "MSE": mse,
-        "R2": r2
-    })
-
-# DataFrame'e dönüştür
-results_df = pd.DataFrame(results)
-
-# MSE'yi küçükten büyüğe sıralayalım (daha iyi performans alta değil üste gelsin diye)
-results_df = results_df.sort_values(by="MSE")
-
-
-print(results_df)
-
-
 
 
