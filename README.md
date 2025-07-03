@@ -37,8 +37,8 @@ Veri seti `arac_verileri.csv` dosyasında yer almaktadır ve şu değişkenleri 
 1. **Linear Regression**  
 2. **Ridge Regression** (GridSearchCV ile hiperparametre optimizasyonu)  
 3. **Lasso Regression**  
-4. **ElasticNet Regression**
-5. ""Random Forest Reggressor""
+4. **ElasticNet Regression**  
+5. **Random Forest Regressor**  
 6. **XGBoost Regressor** (GridSearchCV ile hiperparametre araması yapılmıştır)
 
 ---
@@ -54,6 +54,12 @@ Veri seti `arac_verileri.csv` dosyasında yer almaktadır ve şu değişkenleri 
 | Random Forest      | 0.5595   | 0.1711     |
 | XGBoost (raw)      | 0.4321   | 0.2206     |
 | XGBoost (tuned)    | 0.5938   | 0.1578     |
+
+---
+
+## 🏁 En İyi Model
+
+Model karşılaştırmalarına göre, **Lasso Regression** en yüksek doğruluk (R² = **0.6302**) ve en düşük hata (MSE = **0.1437**) ile en iyi performansı göstermiştir. Bu nedenle projenin nihai değerlendirmesi Lasso modeli üzerinden yapılmıştır.
 
 ---
 
