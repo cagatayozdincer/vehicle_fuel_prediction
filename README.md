@@ -68,6 +68,6 @@ Model karşılaştırmalarına göre, **Lasso Regression** en yüksek doğruluk 
 1. Bu repository'yi klonlayın:
 
 ```bash
-git clone https://github.com/kullanici_adin/vehicle_fuel_prediction.git
+git clone https://github.com/cagatayozdincer/vehicle_fuel_prediction.git
 cd vehicle_fuel_prediction
 
