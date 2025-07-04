@@ -31,28 +31,6 @@ The dataset is located in the `arac_verileri.csv` file and contains the followin
 - scipy
 
 ---
-## 📈 Visualizations
-
-### Correlation Matrix  
-![Correlation Matrix](images/correlation_matrix.png)
-
-### Pairplot  
-![Pairplot](images/pairplot.png)
-
-### Cylinder Count Distribution  
-![Cylinder Count](images/cylinder_count.png)
-
-### Original Target Distribution  
-![Original Target Distribution](images/target_distribution_original.png)
-
-### Log-Transformed Target Distribution  
-![Log-Transformed Target Distribution](images/target_distribution_log_transformed.png)
-
-
-### XGBoost Feature Importance  
-![XGBoost Feature Importance](images/xgboost_feature_importance.png)
-
----
 
 ## 🧪 Applied Models
 
@@ -76,6 +54,28 @@ The dataset is located in the `arac_verileri.csv` file and contains the followin
 | Random Forest       | 0.5595   | 0.1711     |
 | XGBoost (raw)       | 0.4321   | 0.2206     |
 | XGBoost (tuned)     | 0.5938   | 0.1578     |
+
+---
+## 📈 Visualizations
+
+### Correlation Matrix  
+![Correlation Matrix](images/correlation_matrix.png)
+
+### Pairplot  
+![Pairplot](images/pairplot.png)
+
+### Cylinder Count Distribution  
+![Cylinder Count](images/cylinder_count.png)
+
+### Original Target Distribution  
+![Original Target Distribution](images/target_distribution_original.png)
+
+### Log-Transformed Target Distribution  
+![Log-Transformed Target Distribution](images/target_distribution_log_transformed.png)
+
+
+### XGBoost Feature Importance  
+![XGBoost Feature Importance](images/xgboost_feature_importance.png)
 
 ---
 
