@@ -70,5 +70,30 @@ According to the model comparisons, **Lasso Regression** has shown the best perf
 ```bash
 git clone https://github.com/cagatayozdincer/vehicle_fuel_prediction.git
 cd vehicle_fuel_prediction
+---
+
+## 📈 Visualizations
+
+### Correlation Matrix  
+![Correlation Matrix](images/correlation_matrix.png)
+
+### Pairplot  
+![Pairplot](images/pairplot.png)
+
+### Cylinder Count Distribution  
+![Cylinder Count](images/cylinder_count.png)
+
+### Original Target Distribution  
+![Original Target Distribution](images/target_distribution_original.png)
+
+### Log-Transformed Target Distribution  
+![Log-Transformed Target Distribution](images/target_distribution_log_transformed.png)
+
+### Lasso Regression Cross-Validation Scores  
+![Lasso CV Scores](images/lasso_cv_scores.png)
+
+### XGBoost Feature Importance  
+![XGBoost Feature Importance](images/xgboost_feature_importance.png)
+
 
 
