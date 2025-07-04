@@ -48,8 +48,6 @@ The dataset is located in the `arac_verileri.csv` file and contains the followin
 ### Log-Transformed Target Distribution  
 ![Log-Transformed Target Distribution](images/target_distribution_log_transformed.png)
 
-### Lasso Regression Cross-Validation Scores  
-![Lasso CV Scores](images/lasso_cv_scores.png)
 
 ### XGBoost Feature Importance  
 ![XGBoost Feature Importance](images/xgboost_feature_importance.png)
